@@ -12,6 +12,10 @@ body{
     border-bottom: 1px solid #8080805e;
 }
 
+a{
+    text-decoration: none;
+}
+
 .logo{
     width: 180px;
     height: 37px;
