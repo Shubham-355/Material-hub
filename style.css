@@ -97,10 +97,9 @@ a{
     overflow-x: auto;
     padding: 30px;
 }
-
-
 .sub {
     width: 100%;
+    border: 0px solid blue;
     max-width: 300px;
     height: 200px;
     margin-bottom: 10px;
@@ -114,17 +113,6 @@ a{
     position: relative;
   }
   
-.sub::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: blue;
-    transition: width 5s ease;
-}
-
 .sub:hover {
     color: white;
     border-radius: 0;
@@ -132,9 +120,41 @@ a{
     box-shadow: 0 2px 10px rgba(255, 255, 255, 0.156);
 }
 
-.sub:hover::after {
-    width: 100%;
+.sub:before{
+    content:  '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom:solid 2px blue;
+   
+
 }
+
+.sub:hover:before {
+    animation: border_animation 3s forwards;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .subcss{
     margin: auto;
@@ -234,6 +254,19 @@ a{
     'GRAD' 0,
     'opsz' 24
 }
+
+@keyframes border_animation{
+
+ 0% {
+    width : 0%;
+ }
+ 100% {
+    width: 100%;
+ }
+
+}
+
+
 
 @media screen and (max-width: 600px) {
     .sub {
