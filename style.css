@@ -275,14 +275,18 @@ a{
 
     .semcss{
         max-width: none;
+        margin-bottom: 10px;
     }
 
     .sems {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        text-align: center;
     }
 
-    .semcss {
-        max-width: none;
+    .sems{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+        overflow-x: auto;
     }
 }
