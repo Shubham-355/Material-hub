@@ -371,7 +371,7 @@ a{
 
     .side-notice-popup {
         position: absolute;
-        transform: translateY(-250%);
+        transform: translateY(-200%);
         height: 100px
     }
 
