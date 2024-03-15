@@ -302,7 +302,7 @@ a{
 
 
 .side-notice-popup {
-    position: fixed;
+    position: absolute;
     top: 50%;
     right: -520px; /* Adjust this value to control how far the popup is from the right edge */
     transform: translateY(-305%);
