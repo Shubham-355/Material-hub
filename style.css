@@ -302,9 +302,9 @@ a{
 
 
 .side-notice-popup {
-    position: absolute;
+    position: fixed;
     top: 50%;
-    right: -520px; /* Adjust this value to control how far the popup is from the right edge */
+    right: -520px;
     transform: translateY(-305%);
     background-color: #1b1b1b;
     padding: 5px 20px;
@@ -370,7 +370,8 @@ a{
     }
 
     .side-notice-popup {
-        transform: translateY(-180%);
+        position: absolute;
+        transform: translateY(-250%);
         height: 100px
     }
 
