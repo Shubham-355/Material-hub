@@ -51,3 +51,18 @@
             selectedContainer.style.display = 'grid';
         }
     }
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var sideNoticePopup = document.getElementById('sideNoticePopup');
+        var closeButton = document.getElementById('closeButton');
+    
+        closeButton.addEventListener('click', function() {
+            sideNoticePopup.classList.remove('show');
+        });
+    
+        setTimeout(function() {
+            sideNoticePopup.classList.add('show');
+        }, 3000);
+    });
+    
