@@ -25,44 +25,90 @@
 //     blockIndianUsers();
 // });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var navbarButton = document.getElementById('navbarButton');
+    var closeButton = document.getElementById('closeButton');
+    var navbar = document.getElementById('navbar');
+    var overlay = document.getElementById('overlay');
 
-    function showMaterial(materialClass) {
-        console.log('showMaterial called with', materialClass);
-        const materialContainers = document.querySelectorAll('.material-container');
-        materialContainers.forEach(container => {
-            container.style.display = 'none';
-        });
-
-        const selectedContainer = document.querySelector(`.${materialClass}`);
-        if (selectedContainer) {
-            selectedContainer.style.display = 'grid';
-        }
-    }
-
-    function showsub(subclass) {
-        console.log('showsub called with', subclass);
-        const subcontainer = document.querySelectorAll('.sub');
-        subcontainer.forEach(container => {
-            container.style.display = 'none';
-        });
-
-        const selectedContainer = document.querySelector(`.${subclass}`);
-        if (selectedContainer) {
-            selectedContainer.style.display = 'grid';
-        }
-    }
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-        var sideNoticePopup = document.getElementById('sideNoticePopup');
-        var closeButton = document.getElementById('closeButton');
-    
-        closeButton.addEventListener('click', function() {
-            sideNoticePopup.classList.remove('show');
-        });
-    
-        setTimeout(function() {
-            sideNoticePopup.classList.add('show');
-        }, 3000);
+    navbarButton.addEventListener('click', function() {
+    navbar.style.display = 'block';
+    overlay.style.display = 'block';
     });
-    
+
+    closeButton.addEventListener('click', function() {
+    navbar.style.display = 'none';
+    overlay.style.display = 'none';
+    });
+
+    overlay.addEventListener('click', function() {
+    navbar.style.display = 'none';
+    overlay.style.display = 'none';
+    });
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+var sideNoticePopup = document.getElementById('sideNoticePopup');
+var closeButton = document.getElementById('popupCloseButton');
+
+closeButton.addEventListener('click', function() {
+    sideNoticePopup.classList.remove('show');
+});
+
+setTimeout(function() {
+    sideNoticePopup.classList.add('show');
+}, 3000);
+});
+
+
+
+
+
+function showMaterial(materialClass) {
+    console.log('showMaterial called with', materialClass);
+    const materialContainers = document.querySelectorAll('.material-container');
+    materialContainers.forEach(container => {
+        container.style.display = 'none';
+});
+
+const selectedContainer = document.querySelector(`.${materialClass}`);
+    if (selectedContainer) {
+        selectedContainer.style.display = 'grid';
+}
+}
+
+function showsub(subclass) {
+    console.log('showsub called with', subclass);
+    const subcontainer = document.querySelectorAll('.sub');
+    subcontainer.forEach(container => {
+        container.style.display = 'none';
+});
+
+const selectedContainer = document.querySelector(`.${subclass}`);
+    if (selectedContainer) {
+        selectedContainer.style.display = 'grid';
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var sideNoticePopup = document.getElementById('sideNoticePopup');
+    var closeButton = document.getElementById('closeButton');
+    var popupCloseButton = document.getElementById('popupCloseButton');
+
+    closeButton.addEventListener('click', function() {
+        sideNoticePopup.classList.remove('show');
+});
+
+popupCloseButton.addEventListener('click', function() {
+    sideNoticePopup.classList.remove('show');
+});
+
+setTimeout(function() {
+    sideNoticePopup.classList.add('show');
+}, 3000);
+});
