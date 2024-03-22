@@ -6,6 +6,7 @@ body {
 }
 
 .hello {
+    position: relative;
     background-color: black;
     margin: auto;
     padding: 25px;
@@ -114,7 +115,7 @@ a {
 }
 
 #navbarButton {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
 }
