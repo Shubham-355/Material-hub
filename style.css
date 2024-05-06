@@ -471,6 +471,10 @@ a {
     .codecontainer{
         width: 100% !important;
     }
+
+    .codecontent{
+        margin: 6px !important;
+    }
 }
 
 @media screen and (max-width: 1000px) {
