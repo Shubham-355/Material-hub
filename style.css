@@ -131,6 +131,20 @@ a {
     z-index: 999;
 }
 
+.code {
+    display: flex;
+    justify-content: center;
+    border:1px solid black;
+    background-color:#1b1b1b;
+    color: white;
+    width:300px;
+    overflow:auto;    
+    padding:50px;
+}
+.codebox code {
+    font-size:0.9em;
+}
+
 .sem {
     padding: 10px;
     background-color: black;
@@ -453,4 +467,47 @@ a {
     .popupclosebtn {
         margin-top: 15px;
     }
+
+    .codecontainer{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .codecontainer{
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .codecontainer{
+        width: 100% !important;
+    }
+}
+
+.codecontainer{
+    width: 1516px;
+    color: white;
+}
+
+.codecontent{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prtitle{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #1b1b1b;
+}
+
+.filetitle{
+    background-color: #1b1b1b;
+    margin: 10px;
+    padding: 10px;
+}
+
+.precode{
+    overflow: auto;
+    background-color: #1b1b1b;
 }
