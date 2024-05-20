@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Hub</title>
+    <link rel="icon" href="src/MH.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -12,7 +13,7 @@
     <div class="overlay" id="overlay"></div>
     <div class="custom-alert" id="customAlert">
         <span class="close-btn" onclick="closeAlert()">&times;</span>
-        <p>Access from your country is not allowed.</p>
+        <p>Access from your country is not allowed.</p> 
     </div>
     <div class="intro">
         <div class="hello">
@@ -111,45 +112,50 @@
         </div>
 
         <div class="material-container sem5material">
-            <!-- <div class="sub subcss pmbox" onclick="showsub('pm')">
+            <div class="sub subcss pmbox" onclick="showsub('se')">
                 <div class="subdetails">	
-                    <span class="scode">CC401-N</span>
-                    <span class="sname">Principles of Management</span>
+                    <span class="scode">CT501-N</span>
+                    <span class="sname">Software Engineering</span>
                 </div>
             </div>
-            <div class="sub subcss psnmbox" onclick="showsub('psnm')">
+            <div class="sub subcss psnmbox" onclick="showsub('map')">
                 <div class="subdetails">	
-                    <span class="scode">CC402B-N</span>
-                    <span class="sname">Probability, Statistics and Numerical Methods</span>
+                    <span class="scode">CE502-N</span>
+                    <span class="sname">Microprocessor  Architecture and Programming</span>
                 </div>
             </div>
-            <div class="sub subcss coabox" onclick="showsub('coa')">
+            <div class="sub subcss coabox" onclick="showsub('toc')">
                 <div class="subdetails">	
-                    <span class="scode">CT403-N</span>
-                    <span class="sname">Computer Organization & Architecture</span>
+                    <span class="scode">CE503-N</span>
+                    <span class="sname">Theory of Computation</span>
                 </div>
             </div>
-            <div class="sub subcss osbox" onclick="showsub('os')">
+            <div class="sub subcss osbox" onclick="showsub('daa')">
                 <div class="subdetails">	
-                    <span class="scode">CT404-N</span>
-                    <span class="sname">Operating Systems</span>
+                    <span class="scode">CE504-N</span>
+                    <span class="sname">Design & Analysis of Algorithms</span>
                 </div>
             </div>
-            <div class="sub subcss oopjbox" onclick="showsub('oopj')">
+            <div class="sub subcss oopjbox" onclick="showsub('cn')">
                 <div class="subdetails">	
-                    <span class="scode">CT405-N</span>
-                    <span class="sname">Object Oriented Programming using Java</span>
+                    <span class="scode">CE505-N</span>
+                    <span class="sname">Computer Networks</span>
                 </div>
             </div>
-            <div class="sub subcss"> </div>
-            <div class="sub subcss"> </div> -->
+            <div class="sub subcss" onclick="showsub('ajava')">
+                <div class="subdetails">	
+                    <span class="scode">CT506A-N</span>
+                    <span class="sname">Advanced Java Programming</span>
+                </div>
+            </div>
+            <!-- <div class="sub subcss"> </div>
             <div class="sub subcss"> 
                 <div class="subdetails">	
                     <span class="scode"><span class="material-symbols-outlined">
                         engineering
                         </span></span>
                     <span class="sname">Webpage under construction!!!!! </span>
-                </div></div>
+                </div></div> -->
         </div>
 
         <div class="material-container sem6material">
@@ -826,6 +832,66 @@
         </div>
         <div class="practical">
             <a class="assbtn" href="http://" target="_blank"><div class="front-t">Practical</div><div class="back-t">1</div></a>
+        </div>
+        <div class="othermaterial"></div>
+    </div>
+    <div class="ajava submat">
+        <a class="backbtn" href="index.html"><button class="backbtn" onclick="goBack()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button></a>
+        <div class="assignment">
+            <!-- <a class="assbtn" href="http://" target="_blank"><div class="front-t">Assignment</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="practical">
+            <a class="assbtn" href="files\sem5\ADVANCEDJAVA\1.html" target="_blank"><div class="front-t">Practical</div><div class="back-t">1</div></a>
+        </div>
+        <div class="othermaterial"></div>
+    </div>
+    <div class="se submat">
+        <a class="backbtn" href="index.html"><button class="backbtn" onclick="goBack()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button></a>
+        <div class="assignment">
+            <!-- <a class="assbtn" href="http://" target="_blank"><div class="front-t">Assignment</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="practical">
+            <!-- <a class="assbtn" href="files\sem5\ADVANCEDJAVA\1.html" target="_blank"><div class="front-t">Practical</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="othermaterial"></div>
+    </div>
+    <div class="map submat">
+        <a class="backbtn" href="index.html"><button class="backbtn" onclick="goBack()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button></a>
+        <div class="assignment">
+            <!-- <a class="assbtn" href="http://" target="_blank"><div class="front-t">Assignment</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="practical">
+            <!-- <a class="assbtn" href="files\sem5\ADVANCEDJAVA\1.html" target="_blank"><div class="front-t">Practical</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="othermaterial"></div>
+    </div>
+    <div class="toc submat">
+        <a class="backbtn" href="index.html"><button class="backbtn" onclick="goBack()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button></a>
+        <div class="assignment">
+            <!-- <a class="assbtn" href="http://" target="_blank"><div class="front-t">Assignment</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="practical">
+            <!-- <a class="assbtn" href="" target="_blank"><div class="front-t">Practical</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="othermaterial"></div>
+    </div>
+    <div class="daa submat">
+        <a class="backbtn" href="index.html"><button class="backbtn" onclick="goBack()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button></a>
+        <div class="assignment">
+            <!-- <a class="assbtn" href="http://" target="_blank"><div class="front-t">Assignment</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="practical">
+            <!-- <a class="assbtn" href="" target="_blank"><div class="front-t">Practical</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="othermaterial"></div>
+    </div>
+    <div class="cn submat">
+        <a class="backbtn" href=""><button class="backbtn" onclick="goBack()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button></a>
+        <div class="assignment">
+            <!-- <a class="assbtn" href="http://" target="_blank"><div class="front-t">Assignment</div><div class="back-t">1</div></a> -->
+        </div>
+        <div class="practical">
+            <!-- <a class="assbtn" href="" target="_blank"><div class="front-t">Practical</div><div class="back-t">1</div></a> -->
         </div>
         <div class="othermaterial"></div>
     </div>
